@@ -8,7 +8,6 @@ local p=data.raw['electric-pole']['small-electric-pole'];
 local pr=settings.startup["poles-plus-small-reach"].value;
 p.maximum_wire_distance = pr;
 p.supply_area_distance = pr/2;
-p.collision_box={{0,0},{0,0}};
 if(lights_on) then p.light=light_params; end
 
 p=data.raw['electric-pole']['medium-electric-pole'];
