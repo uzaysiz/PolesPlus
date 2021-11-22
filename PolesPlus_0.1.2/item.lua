@@ -15,18 +15,18 @@ p=data.raw['electric-pole']['medium-electric-pole'];
 pr=settings.startup["poles-plus-medium-reach"].value;
 p.maximum_wire_distance = pr;
 p.supply_area_distance = pr/2;
-p.collision_box={{0,0},{0,0}};
 if(lights_on) then p.light=light_params; end
 
 p=data.raw['electric-pole']['big-electric-pole'];
 pr=settings.startup["poles-plus-big-reach"].value;
 p.maximum_wire_distance = pr;
-p.collision_box={{0,0},{0,0}};
 if(lights_on) then p.light=light_params; end
 
 p=data.raw['electric-pole']['substation'];
 pr=settings.startup["poles-plus-sub-reach"].value;
 p.maximum_wire_distance = pr;
 p.supply_area_distance = pr/2;
-p.collision_box={{0,0},{0,0}};
 if(lights_on) then p.light=light_params; end
+
+p=data.raw['pipe-to-ground']['pipe-to-ground'];
+p.fluid_box.pipe_connections[2].max_underground_distance=settings.startup["poles-plus-underground-length"].value;

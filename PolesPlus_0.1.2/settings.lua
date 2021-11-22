@@ -74,4 +74,15 @@ data:extend({
     maximum_value = 64,
     order = "abd"
   },
+  {
+    type = "int-setting",
+    setting_type = "startup",
+    name = "poles-plus-underground-length",
+	localised_name={"","Underground pipe length"},
+	localised_description={"","Underground pipe length"},
+    default_value = 48,
+	minimum_value = 1,
+    maximum_value = 64,
+    order = "abe"
+  },
 })
