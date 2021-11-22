@@ -1,0 +1,11 @@
+{
+    "name": "PolesPlus",
+    "version": "0.1.1",
+    "title": "Poles Plus",
+    "author": "uzayli",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "1.1.2",
+    "dependencies": ["base >= 0.16"],
+    "description": "electric poles have inbuilt lighting, longer wire reach and supply area"
+}
